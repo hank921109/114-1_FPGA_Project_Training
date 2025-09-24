@@ -6,3 +6,4 @@ S1：Counter1維持，Counter2從253倒數79，狀態轉換成S0。
 
 
 ![PIC1](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW1_TwoCounter/picture1.png)
+![PIC2](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW1_TwoCounter/picture2.png)
