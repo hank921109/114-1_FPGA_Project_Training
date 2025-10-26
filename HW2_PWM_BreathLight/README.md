@@ -4,8 +4,8 @@
 
 ### 利用HW1_TwoCounter的計數器，模擬PWM訊號。(out_led為輸出後的呼吸燈的工作週期)
 upbnd1p與upbnd2p為互補（相加為2^8 = 255）
-- upbnd1p：越大LED越暗，工作週期愈短。
-- upbnd2p：越大LED越亮，工作週期愈長。
+- upbnd1：越大LED越暗，工作週期愈短。
+- upbnd2：越大LED越亮，工作週期愈長。
 - 可以看FPGA板子是高電位觸發還是低電位觸發，來定義upbnd（upper bound上限值）。
 
 ### FSM兩種狀態（當LED最亮or最暗的時候切換狀態）
