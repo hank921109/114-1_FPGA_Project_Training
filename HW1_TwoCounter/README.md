@@ -7,5 +7,5 @@
 - 其中Counter1的**0**必須和Counter2的**253**重疊。
 
 
-![PIC1](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW1_TwoCounter/picture1.png)
-![PIC2](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW1_TwoCounter/picture2.png)
+![PIC1](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW1_TwoCounter/images/picture1.png)
+![PIC2](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW1_TwoCounter/images/picture2.png)
