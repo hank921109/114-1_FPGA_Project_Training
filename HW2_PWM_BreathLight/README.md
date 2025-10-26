@@ -1,6 +1,6 @@
 ## 設計PWM控制之呼吸燈
 利用HW1_TwoCounter的計數器及FSM狀態幾設計，完成PWM控制LED燈。
-**HW2_BreathLight.vhd(主程式)**中有宣告 **P** ，用來抓取pwm_pedge(PWM的正緣訊號)，當抓取到P個pwm_pedge時，會在alreadyP_PWM_cycles下一個clock狀態輸出為1。設定這個的用意是為了PWM切換亮暗速度過快，會看不出來波形之變化。
+**HW2_BreathLight.vhd(主程式)** 中有宣告 **P** ，用來抓取pwm_pedge(PWM的正緣訊號)，當抓取到P個pwm_pedge時，會在alreadyP_PWM_cycles下一個clock狀態輸出為1。設定這個的用意是為了PWM切換亮暗速度過快，會看不出來波形之變化。
 
 ### 利用HW1_TwoCounter的計數器，模擬PWM訊號。(out_led為輸出後的呼吸燈的工作週期)
 upbnd1p與upbnd2p為互補（相加為2^8 = 255）
