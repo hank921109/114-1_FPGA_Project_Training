@@ -13,11 +13,11 @@ upbnd1p與upbnd2p為互補（相加為2^8 = 255）
 - gettingDrak  (state2)：當upbnd2 = 0  時，將狀態切換為gettingBright。
 
 
-![image1](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_Breath_Light/images/1.png)
-![image2](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_Breath_Light/images/2.png)
-![image3](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_Breath_Light/images/3.png)
-![image4](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_Breath_Light/images/4.png)
-![image5](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_Breath_Light/images/5.png)
-![image6](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_Breath_Light/images/6.png)
-![image7](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_Breath_Light/images/7.png)
-![image8](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_Breath_Light/images/8.png)
+![image1](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_BreathLight/images/1.png)
+![image2](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_BreathLight/images/2.png)
+![image3](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_BreathLight/images/3.png)
+![image4](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_BreathLight/images/4.png)
+![image5](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_BreathLight/images/5.png)
+![image6](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_BreathLight/images/6.png)
+![image7](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_BreathLight/images/7.png)
+![image8](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_BreathLight/images/8.png)
