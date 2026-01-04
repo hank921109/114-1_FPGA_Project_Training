@@ -56,54 +56,115 @@ begin
     reset <= '0';
     swL <= '0';
     swR <= '0';
-    wait for 23 ns;
+    wait for 30 ns;
     reset <= '1';
     
-    --一開始由左方發球
-    wait for 530 ns; --右方接球
+    -- 球經過每一顆LED時間為160 ns，160*8=1280
+	-- 情況一:從左邊開始發球，右邊提前打
+    wait for 530 ns; -- 右邊接球(提早打，左邊會得分) 
     swR <= '1';
     wait for 80 ns;
     swR <= '0';
+	-- 結果:左邊得分 1:0
 
-    wait for 300 ns; --左方提早打 右方得分並發球
+    -- 情況二:左邊發球，右邊漏接
+    wait for 150 ns; 
     swL <= '1';
     wait for 80 ns;
     swL <= '0';
-    wait for 80 ns; --右方發球
-    swR <= '1';
-    wait for 80 ns;
-    swR <= '0';
+    wait for 1300 ns;
+	-- 結果:左邊得分 2:0
     
-    wait for 500 ns; --左方接球
+	-- 情況三:左邊發球，右邊回擊，左邊提前回擊
+    wait for 150 ns; 
     swL <= '1';
     wait for 80 ns;
     swL <= '0';
-    
-    wait for 100 ns; --右方提早打 左方得分並發球
-    swR <= '1';
-    wait for 80 ns;
-    swR <= '0';
-    wait for 80 ns; --左方發球
+	
+	-- 右邊回擊
+    wait for 1300 ns;
+	swR <= '1';
+	wait for 80 ns;
+	swR <= '0';
+	
+	-- 左邊提前回擊
+	wait for 480 ns;
     swL <= '1';
     wait for 80 ns;
     swL <= '0';
-    
-    wait for 550 ns; --右方接球
+	-- 結果:右邊得分 2:1
+	
+	-- 情況四:右邊發球，左邊漏接
+    wait for 150 ns;
+	swR <= '1';
+	wait for 80 ns;
+	swR <= '0';	
+	wait for 1300 ns;
+	-- 結果:右邊得分 2:2
+	
+	-- 情況五:右邊發球，左邊回擊，右邊提早打
+    wait for 250 ns;
+	swR <= '1';
+	wait for 80 ns;
+	swR <= '0';
+
+    -- 左邊回擊	
+    wait for 1250 ns;
+	swL <= '1';
+	wait for 80 ns;
+	swL <= '0';
+	
+	-- 右邊提前回擊
+	wait for 480 ns;
     swR <= '1';
     wait for 80 ns;
     swR <= '0';
-    
-    wait for 680 ns; --左方漏接 右方得分並發球
-    swR <= '1';
-    wait for 80 ns;
-    swR <= '0';
-    
-    wait for 550 ns; --左方接球
+	-- 結果:左邊得分 3:2
+	
+	-- 後面情況不限制，繼續打
+	
+	-- 重複情況二:左邊發球，右邊提前打
+    wait for 150 ns; -- 左邊發球
     swL <= '1';
     wait for 80 ns;
     swL <= '0';
-    --右方漏接 左方得分 結束
-    wait;
+	
+	wait for 500 ns;
+	swR <= '1'; -- 右邊提前打
+    wait for 80 ns;
+    swR <= '0';
+	-- 結果:左邊得分 4:2
+	
+	-- 重複情況三:左邊發球，右邊回擊，左邊提前回擊
+    wait for 150 ns; 
+    swL <= '1';
+    wait for 80 ns;
+    swL <= '0';
+	
+	-- 右邊回擊
+    wait for 1200 ns;
+	swR <= '1';
+	wait for 80 ns;
+	swR <= '0';
+	
+	-- 左邊提前回擊
+	wait for 480 ns;
+    swL <= '1';
+    wait for 80 ns;
+    swL <= '0';
+	-- 結果:右邊得分 4:3
+	
+	-- 重複情況四:右邊發球，左邊漏接
+    wait for 150 ns;
+	swR <= '1';
+	wait for 80 ns;
+	swR <= '0';	
+	wait for 1300 ns;
+	-- 結果:右邊得分 4:4
+	
+	
+	wait for 300 ns;
+    -- 結束測試
 end process;
  
 END;
