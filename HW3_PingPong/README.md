@@ -18,8 +18,6 @@
 * **Lwin**：左方獲勝狀態。此時 `score_L` 加 1，並停止移動，等待左方按下按鈕重新發球。
 * **Rwin**：右方獲勝狀態。此時 `score_R` 加 1，並停止移動，等待右方按下按鈕重新發球。
 
-## DEMO影片：[點選我](https://www.youtube.com/watch?v=uyzh3EdlKzs)
-
 ## 波形圖 (TESTBENCH 分析)
 
 ### 1. 完整波形 (Whole Waveform)
@@ -49,6 +47,8 @@
 - 最後：重新開始遊戲
 ![Situation Reset](./images/situation_other_reset.png)
 ---
+
+## DEMO影片：[點選我](https://www.youtube.com/watch?v=uyzh3EdlKzs)
 
 ## 【加分題】動態變速機制
 * 當雙方總分 $$score\_L + score\_R \ge 4$$ 時，系統會調整分頻計數器，使 LED 移動速度加快。
