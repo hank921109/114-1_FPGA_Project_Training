@@ -13,7 +13,7 @@ upbnd1p與upbnd2p為互補（相加為2^8 = 255）
 - gettingDrak  (state2)：當upbnd2 = 0  時，將狀態切換為gettingBright。
 
 ### DEMO影片：
-[請點選我]([url](https://www.youtube.com/watch?v=aiZkjLKVDmI))
+[請點選我](https://www.youtube.com/watch?v=aiZkjLKVDmI)
 
 ### 波形圖(TESTBENCH)
 ![image1](https://github.com/hank921109/114-1_FPGA_Project_Training/blob/main/HW2_PWM_BreathLight/images/1.png)
