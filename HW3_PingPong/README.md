@@ -18,6 +18,8 @@
 * **Lwin**：左方獲勝狀態。此時 `score_L` 加 1，並停止移動，等待左方按下按鈕重新發球。
 * **Rwin**：右方獲勝狀態。此時 `score_R` 加 1，並停止移動，等待右方按下按鈕重新發球。
 
+## DEMO影片：[點選我](https://www.youtube.com/watch?v=uyzh3EdlKzs)
+
 ## 波形圖 (TESTBENCH 分析)
 
 ### 1. 完整波形 (Whole Waveform)
