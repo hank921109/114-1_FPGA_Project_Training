@@ -40,10 +40,11 @@ begin
 		if (score_L + score_R) >= "0100" then
 		    div_clk <= cnt(2);
 		else
-            div_clk <= cnt(2);  -- cnt(x) x決定速度快慢，x越大速度越慢，燒錄板子把1改為23
+            div_clk <= cnt(2);  -- cnt(x) x決定速度快慢，x越大速度越慢，燒錄板子把2改為23
 		end if;
     end if;
 end process;
+------ 除頻 end ------
 
 FSM:process(clk, rst, i_swL, i_swR, led_r)
 begin
